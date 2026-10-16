@@ -1,17 +1,19 @@
 
-
 name: Java CI/CD Pipeline
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: windows-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -23,7 +25,7 @@ jobs:
           java-version: '21'
 
       - name: Compile Java code
-        run: javac New.java
+        run: javac new.java
 
       - name: Run Java Program
         run: java New
