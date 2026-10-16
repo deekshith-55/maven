@@ -17,6 +17,6 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
       - name: Compile Java code
-        run: javac new.java
+        run: javac New.java
       - name:Run Java Program
-        run: java new
+        run: java New
