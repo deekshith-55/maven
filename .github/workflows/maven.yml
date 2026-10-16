@@ -1,4 +1,4 @@
-name:Java CI/CD Pipeline
+name: Java CI/CD Pipeline
 on: 
   push:
     branches: [ main ]
@@ -18,5 +18,5 @@ jobs:
           java-version: '21'
       - name: Compile Java code
         run: javac New.java
-      - name:Run Java Program
+      - name: Run Java Program
         run: java New
